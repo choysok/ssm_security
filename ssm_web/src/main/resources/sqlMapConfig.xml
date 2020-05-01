@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- -->
+
+    <!-- 配置环境-->
+    <environments default="oracle">
+        <environment id="oracle">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED"> <!--当type不是POOLED时 property中的name属性值 是不一样的 -->
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver" />
+                <property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521:orcl" />
+                <property name="username" value="ssm" />
+                <property name="password" value="123456" />
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <!-- 引用 映射配置文件或者是Dao层类的类名全路径,或者是引入Dao层的包-->
+    <mappers>
+        <package name="com.page.ssm.dao"/>
+    </mappers>
+
+
+</configuration>

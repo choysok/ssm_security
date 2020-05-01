@@ -1,0 +1,701 @@
+[ INFO] 28-04-20 12:43:58 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 12:43:58 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 12:43:58 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 12:43:58 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 12:43:58 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 12:43:58 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 12:43:58 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 12:48:22 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 12:48:23 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 12:48:23 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 12:48:23 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 12:48:23 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 12:48:23 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 12:48:23 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 13:32:14 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 13:32:14 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 13:32:14 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 13:32:14 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 13:32:15 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 13:32:16 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 13:32:16 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 13:44:51 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 13:44:51 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 13:44:51 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 13:44:51 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 13:44:52 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 13:44:52 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 13:44:52 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 14:17:02 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 14:17:02 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 14:17:02 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 14:17:02 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 14:17:02 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 14:17:03 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 14:17:03 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 14:19:28 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 14:19:28 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 14:19:28 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 14:19:28 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 14:19:29 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 14:19:29 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 14:19:29 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 14:30:05 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 14:30:06 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 14:30:06 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 14:30:06 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 14:30:06 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 14:30:07 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 14:30:07 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 14:32:56 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 14:32:56 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 14:32:56 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 14:32:56 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 14:32:56 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ WARN] 28-04-20 14:32:57 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ERROR] 28-04-20 14:32:57 : ContextLoader.java 316 : Context initialization failed 
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:586)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:758)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1062)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:583)
+	... 25 more
+[ INFO] 28-04-20 14:53:28 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13fee20c: startup date [Tue Apr 28 14:53:28 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 14:53:28 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ WARN] 28-04-20 14:53:29 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ INFO] 28-04-20 14:58:53 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3ec300f1: startup date [Tue Apr 28 14:58:53 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 14:58:53 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ WARN] 28-04-20 14:58:54 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ INFO] 28-04-20 15:02:50 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3ec300f1: startup date [Tue Apr 28 15:02:50 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 15:02:51 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 15:02:51 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 15:02:52 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 15:02:53 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91h5sldp1gxn43i|1046d517, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91h5sldp1gxn43i|1046d517, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 15:05:30 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13fee20c: startup date [Tue Apr 28 15:05:30 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 15:05:30 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 15:05:31 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 15:05:32 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 15:05:32 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91h5w0lq5zuk4p|65466a6a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91h5w0lq5zuk4p|65466a6a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 15:11:41 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13fee20c: startup date [Tue Apr 28 15:11:41 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 15:11:41 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 15:11:42 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 15:11:43 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 15:11:43 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91h63ymybmy604|65466a6a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91h63ymybmy604|65466a6a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 15:19:40 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13fee20c: startup date [Tue Apr 28 15:19:40 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 15:19:40 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 15:19:41 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 15:19:42 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 15:19:42 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91h6e8j813sxa3k|65466a6a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91h6e8j813sxa3k|65466a6a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 15:30:38 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@13fee20c: startup date [Tue Apr 28 15:30:38 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 15:30:38 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ WARN] 28-04-20 15:30:39 : AbstractApplicationContext.java 557 : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl': Unsatisfied dependency expressed through field 'productDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.page.ssm.dao.ProductDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)} 
+[ INFO] 28-04-20 18:52:31 : AbstractApplicationContext.java 589 : Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3ec300f1: startup date [Tue Apr 28 18:52:31 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 18:52:31 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 18:52:32 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 18:52:33 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 18:53:57 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 18:53:57 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 18:53:57 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 18:53:57 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 18:53:58 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 18:53:58 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 18:53:58 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 18:53:58 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 980 ms 
+[ INFO] 28-04-20 18:53:58 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 18:53:58 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 18:53:58 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 18:53:58 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 18:53:58 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 18:53:59 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 18:53:59 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 18:53:59 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 18:53:58 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 18:53:59 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 18:53:58 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 18:53:59 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 656 ms 
+[ INFO] 28-04-20 18:58:15 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 18:58:15 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 18:58:15 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 18:58:15 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 18:58:15 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 18:58:16 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 18:58:16 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 18:58:16 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1360 ms 
+[ INFO] 28-04-20 18:58:16 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 18:58:16 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 18:58:16 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 18:58:16 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 18:58:16 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 18:58:17 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 18:58:17 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 18:58:17 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 18:58:16 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 18:58:17 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 18:58:16 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 18:58:17 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1056 ms 
+[ INFO] 28-04-20 18:59:11 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91he7bua1n04c7h|330aec28, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91he7bua1n04c7h|330aec28, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 19:11:11 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 19:11:11 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 19:11:11 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 19:11:11 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 19:11:12 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 19:11:12 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 19:11:12 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 19:11:13 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 2220 ms 
+[ INFO] 28-04-20 19:11:13 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 19:11:13 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:11:13 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:11:13 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 19:11:14 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 19:11:14 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 19:11:14 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 19:11:15 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:11:13 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:11:15 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:11:13 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:11:15 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1573 ms 
+[ INFO] 28-04-20 19:11:45 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91henz1bm2tkkr|70a8d54b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91henz1bm2tkkr|70a8d54b, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 19:13:47 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 19:13:47 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 19:13:47 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 19:13:47 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 19:13:48 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 19:13:48 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 19:13:48 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 19:13:48 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1386 ms 
+[ INFO] 28-04-20 19:13:48 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 19:13:48 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:13:48 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:13:48 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 19:13:49 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 19:13:49 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 19:13:49 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 19:13:49 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:13:48 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:13:49 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:13:48 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:13:49 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1070 ms 
+[ INFO] 28-04-20 19:13:57 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91herb68pigta6|434800c8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91herb68pigta6|434800c8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 19:32:59 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 19:32:59 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 19:32:59 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 19:32:59 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 19:32:59 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 19:32:59 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 19:32:59 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 19:33:00 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1387 ms 
+[ INFO] 28-04-20 19:33:00 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 19:33:00 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:33:00 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:33:00 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 19:33:00 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 19:33:01 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 19:33:01 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 19:33:01 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:33:00 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:33:01 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 19:33:00 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 19:33:01 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1190 ms 
+[ INFO] 28-04-20 19:33:16 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hffznd1aspe0s|171c2150, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hffznd1aspe0s|171c2150, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 20:50:13 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 20:50:13 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 20:50:13 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 20:50:13 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 20:50:13 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 20:50:13 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 20:50:13 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 20:50:14 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1385 ms 
+[ INFO] 28-04-20 20:50:14 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 20:50:14 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:50:14 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:50:14 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 20:50:14 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 20:50:15 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 20:50:15 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 20:50:15 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:50:14 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:50:15 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:50:14 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:50:15 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1103 ms 
+[ INFO] 28-04-20 20:51:04 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hi7bay1l623mb|181cede2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hi7bay1l623mb|181cede2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 20:51:53 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 20:51:53 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 20:51:53 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 20:51:53 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 20:51:53 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 20:51:54 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 20:51:54 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 20:51:54 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1378 ms 
+[ INFO] 28-04-20 20:51:54 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 20:51:54 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:51:54 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:51:54 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 20:51:54 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 20:51:55 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 20:51:55 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 20:51:55 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:51:54 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:51:55 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:51:54 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:51:55 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1029 ms 
+[ INFO] 28-04-20 20:52:10 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hi9gpy1up3xig|e2a75f1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hi9gpy1up3xig|e2a75f1, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 20:57:35 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 20:57:35 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 20:57:35 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 20:57:35 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 20:57:36 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 20:57:36 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 20:57:36 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 20:57:37 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1590 ms 
+[ INFO] 28-04-20 20:57:37 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 20:57:37 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:57:37 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:57:37 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 20:57:37 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 20:57:38 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 20:57:38 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 20:57:38 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:57:37 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:57:38 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 20:57:37 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 20:57:38 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1131 ms 
+[ INFO] 28-04-20 20:58:04 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91higt3d1g590ps|26a5eaba, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91higt3d1g590ps|26a5eaba, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 21:11:08 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 21:11:08 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 21:11:08 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 21:11:09 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 21:11:09 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 21:11:09 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 21:11:09 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 21:11:10 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1341 ms 
+[ INFO] 28-04-20 21:11:10 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 21:11:10 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 21:11:10 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 21:11:10 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 21:11:10 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 21:11:10 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 21:11:10 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 21:11:11 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 21:11:10 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 21:11:11 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 21:11:10 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 21:11:11 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1038 ms 
+[ INFO] 28-04-20 21:11:17 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hiy8en12kmtb4|4d774a1d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hiy8en12kmtb4|4d774a1d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 21:42:20 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 21:42:20 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 21:42:20 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 21:42:20 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 21:42:20 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 21:42:21 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 21:42:21 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 21:42:21 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1426 ms 
+[ INFO] 28-04-20 21:42:21 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 21:42:21 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 21:42:21 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 21:42:21 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 21:42:21 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 21:42:22 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 21:42:22 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 21:42:22 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 21:42:21 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 21:42:22 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 21:42:21 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 21:42:22 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1120 ms 
+[ INFO] 28-04-20 21:42:30 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hk2c951ehgowy|6012bf67, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hk2c951ehgowy|6012bf67, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 22:05:39 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 22:05:39 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 22:05:39 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 22:05:39 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 22:05:40 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:05:40 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 22:05:40 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 22:05:40 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1465 ms 
+[ INFO] 28-04-20 22:05:41 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 22:05:41 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:05:41 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:05:41 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 22:05:41 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:05:41 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 22:05:41 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 22:05:41 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:05:41 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:05:41 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:05:41 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:05:42 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1112 ms 
+[ INFO] 28-04-20 22:05:50 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hkwc2k10btnel|1b967218, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hkwc2k10btnel|1b967218, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 22:18:21 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 22:18:21 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 22:18:21 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 22:18:21 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 22:18:21 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:18:22 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 22:18:22 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 22:18:22 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1338 ms 
+[ INFO] 28-04-20 22:18:22 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 22:18:22 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:18:22 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:18:22 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 22:18:22 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:18:23 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 22:18:23 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 22:18:23 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:18:22 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:18:23 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:18:22 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:18:23 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 1072 ms 
+[ INFO] 28-04-20 22:18:28 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hlcnqget274e|7b8a6c66, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hlcnqget274e|7b8a6c66, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 22:44:51 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 22:44:51 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 22:44:51 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 22:44:51 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 22:44:52 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:44:52 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 22:44:52 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 22:44:52 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1052 ms 
+[ INFO] 28-04-20 22:44:52 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 22:44:52 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:44:52 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:44:52 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 22:44:52 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:44:53 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 22:44:53 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 22:44:53 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:44:52 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:44:53 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:44:52 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:44:53 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 588 ms 
+[ INFO] 28-04-20 22:45:24 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hmaqv6cvx6g7|5ae9feb4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hmaqv6cvx6g7|5ae9feb4, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 22:58:43 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 22:58:43 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 22:58:43 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 22:58:43 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 22:58:44 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:58:44 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 22:58:44 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 22:58:44 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1396 ms 
+[ INFO] 28-04-20 22:58:44 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 22:58:44 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:58:44 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:58:44 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 22:58:45 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 22:58:45 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 22:58:45 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 22:58:45 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:58:44 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:58:45 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 22:58:44 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 22:58:45 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 832 ms 
+[ INFO] 28-04-20 22:58:57 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hmskqxtl46z4|7e702c8e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hmskqxtl46z4|7e702c8e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:16:55 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:16:55 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:16:55 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:16:55 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:16:56 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:16:56 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:16:56 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:16:56 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1207 ms 
+[ INFO] 28-04-20 23:16:56 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:16:56 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:16:56 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:16:56 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:16:57 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:16:57 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:16:57 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:16:57 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:16:56 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:16:57 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:16:56 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:16:57 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 831 ms 
+[ INFO] 28-04-20 23:17:00 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hnfzh1899t7o|6b39c457, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hnfzh1899t7o|6b39c457, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:30:01 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:30:02 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:30:02 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:30:02 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:30:02 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:30:02 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:30:02 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:30:03 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1026 ms 
+[ INFO] 28-04-20 23:30:03 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:30:03 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:30:03 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:30:03 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:30:03 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:30:03 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:30:03 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:30:03 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:30:03 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:30:03 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:30:03 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:30:03 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 734 ms 
+[ INFO] 28-04-20 23:30:56 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hnwu1w14otr4a|34106ec1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hnwu1w14otr4a|34106ec1, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:41:34 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:41:34 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:41:34 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:41:34 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:41:35 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:41:35 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:41:35 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:41:35 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 1019 ms 
+[ INFO] 28-04-20 23:41:35 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:41:35 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:41:35 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:41:35 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:41:35 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:41:36 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:41:36 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:41:36 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:41:35 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:41:36 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:41:35 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:41:36 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 772 ms 
+[ INFO] 28-04-20 23:44:11 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hobola1trv4tc|60f8324a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hobola1trv4tc|60f8324a, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:46:49 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:46:49 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:46:49 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:46:49 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:46:49 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:46:49 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:46:50 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:46:50 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 979 ms 
+[ INFO] 28-04-20 23:46:50 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:46:50 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:46:50 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:46:50 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:46:50 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:46:50 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:46:50 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:46:50 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:46:50 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:46:50 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:46:50 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:46:51 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 712 ms 
+[ INFO] 28-04-20 23:46:53 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hoifc940jw0b|19d03f04, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hoifc940jw0b|19d03f04, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:48:56 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:48:56 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:48:56 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:48:57 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:48:57 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:48:57 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:48:57 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:48:57 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 968 ms 
+[ INFO] 28-04-20 23:48:57 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:48:57 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:48:57 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:48:57 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:48:58 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:48:58 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:48:58 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:48:58 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:48:57 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:48:58 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:48:57 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:48:58 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 871 ms 
+[ INFO] 28-04-20 23:49:25 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hol5r3tso96k|470c9e4d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hol5r3tso96k|470c9e4d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:53:27 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:53:27 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:53:27 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:53:27 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:53:27 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:53:27 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:53:27 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:53:28 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 853 ms 
+[ INFO] 28-04-20 23:53:28 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:53:28 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:53:28 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:53:28 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:53:28 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:53:28 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:53:28 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:53:28 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:53:28 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:53:28 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:53:28 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:53:28 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 608 ms 
+[ INFO] 28-04-20 23:53:31 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hoqyeb11clo4t|14c449d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hoqyeb11clo4t|14c449d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 
+[ INFO] 28-04-20 23:54:47 : ContextLoader.java 270 : Root WebApplicationContext: initialization started 
+[ INFO] 28-04-20 23:54:47 : AbstractApplicationContext.java 589 : Refreshing Root WebApplicationContext: startup date [Tue Apr 28 23:54:47 CST 2020]; root of context hierarchy 
+[ INFO] 28-04-20 23:54:47 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [applicationContext.xml] 
+[ INFO] 28-04-20 23:54:48 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:54:48 : MLog.java 80 : MLog clients using log4j logging. 
+[ INFO] 28-04-20 23:54:48 : C3P0Registry.java 204 : Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10] 
+[ INFO] 28-04-20 23:54:48 : ContextLoader.java 310 : Root WebApplicationContext: initialization completed in 903 ms 
+[ INFO] 28-04-20 23:54:48 : FrameworkServlet.java 494 : FrameworkServlet 'DispatcherServlet': initialization started 
+[ INFO] 28-04-20 23:54:48 : AbstractApplicationContext.java 589 : Refreshing WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:54:48 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:54:48 : XmlBeanDefinitionReader.java 316 : Loading XML bean definitions from class path resource [spring-mvc.xml] 
+[ INFO] 28-04-20 23:54:48 : AutowiredAnnotationBeanPostProcessor.java 154 : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+[ INFO] 28-04-20 23:54:49 : AbstractUrlHandlerMapping.java 373 : Mapped URL path [/js/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' 
+[ INFO] 28-04-20 23:54:49 : AbstractHandlerMethodMapping.java 549 : Mapped "{[/product/findAll.do]}" onto public org.springframework.web.servlet.ModelAndView com.page.ssm.controller.ProductController.findAll() throws java.lang.Exception 
+[ INFO] 28-04-20 23:54:49 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:54:48 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:54:49 : RequestMappingHandlerAdapter.java 568 : Looking for @ControllerAdvice: WebApplicationContext for namespace 'DispatcherServlet-servlet': startup date [Tue Apr 28 23:54:48 CST 2020]; parent: Root WebApplicationContext 
+[ INFO] 28-04-20 23:54:49 : FrameworkServlet.java 513 : FrameworkServlet 'DispatcherServlet': initialization completed in 626 ms 
+[ INFO] 28-04-20 23:55:00 : AbstractPoolBackedDataSource.java 462 : Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hgfda9a91hosofb5uqaqp|7aebf834, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hgfda9a91hosofb5uqaqp|7aebf834, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@127.0.0.1:1521:orcl, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ] 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
+    <!--它的作用是隐式的向Spring容器注册
+                           AutowiredAnnotationBeanPostProcessor,
+                           CommonAnnotationBeanPostProcessor,
+                           PersistenceAnnotationBeanPostProcessor,
+                           RequiredAnnotationBeanPostProcessor
+     这4个BeanPostProcessor.注册这4个bean处理器主要的作用是为了你的系统能够识别相应的注解。
+            <context:annotation-config/>
+            <bean id="productService" class="com.page.ssm.service.impl.ProductServiceImpl"/>
+             <bean id="productDao"  class="com.page.ssm.dao.ProductDao" abstract="true"/>
+      -->
+
+    <!--开启注解的扫描，管理service和dao -->
+
+    <!--不扫Controller包
+    -->
+
+    <context:component-scan base-package="com.page.ssm">
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan >
+
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!--Spring整合MyBatis -->
+    <!--配置连接池  -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${jdbc.driver}" />
+        <property name="jdbcUrl" value="${jdbc.url}" />
+        <property name="user" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+    </bean>
+    <!--配置SqlSessionFactory  -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <!--配置PageHelper的插件-->
+        <property name="plugins">
+            <array>
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <props>
+                            <prop key="helperDialect">oracle</prop>
+                            <prop key="reasonable">true</prop>
+                        </props>
+                    </property>
+                </bean>
+            </array>
+        </property>
+    </bean>
+
+    <!--配置MapperScannerConfigurer 关于数据库和实体类的映射的扫描-->
+    <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.page.ssm.dao"/>
+    </bean>
+
+
+    <!-- ..............Spring整合MyBatis 完成..............！ -->
+
+    <!--配置SpringFramework声明式事务管理 -->
+    <!--配置 事务管理器-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--配置 事务的注解驱动-->
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+
+</beans>
