@@ -1,0 +1,123 @@
+-----------产品表
+CREATE TABLE product(
+id VARCHAR2(32) default SYS_GUID() PRIMARY KEY,
+productNum VARCHAR2(50) NOT NULL, 
+productName VARCHAR2(50),
+cityName VARCHAR2(50),
+departureTime timestamp,
+productPrice Number,
+productDesc VARCHAR2(500),
+productStatus INT,
+CONSTRAINT product UNIQUE(id,productNum)
+);
+
+select * from product;
+
+productNum,productName,cityName,DepartureTime,productPrice,productDesc,productStatus
+values(${productNum},${productName},${cityName},${DepartureTime},${productPrice},${productDesc},${productStatus})
+
+'itcast-003','北京三日游','北京',to_timestamp('10-10-2018 10:10:00.000000','dd-mm-yyyy hh24:mi:ss.ff'),1200,'不错的旅行',1
+'itcast-002','天津三日游','天津',to_timestamp('30-05-2018 12:10:00.000000','dd-mm-yyyy hh24:mi:ss.ff'),2300,'不错的旅行',0
+
+insert into product(productNum,productName,cityName,departureTime,productPrice,productDesc,productStatus) 
+values('itcast-001','北京三日游','天津',to_date('2003-10-17 21:15:37','yyyy-mm-dd hh24:mi:ss'),2300,'不错的旅行',0);
+
+------------旅客表
+CREATE TABLE traveller(
+id VARCHAR2(32) default SYS_GUID() PRIMARY KEY,
+name VARCHAR2(50),
+sex VARCHAR2(50),
+phoneNum VARCHAR2(50),
+credentialsType INT,
+credentialsNum VARCHAR2(50),
+travellerType INT
+);
+
+
+orderNum,orderTime,peopleCount,orderDesc,payType,orderStatus
+'订单名字',to_timestamp('30-05-2018 12:10:00.000000','dd-mm-yyyy hh24:mi:ss.ff'),'30','这个订单稳赚','0','0'
+
+insert into orders(orderNum,orderTime,peopleCount,orderDesc,payType,orderStatus) values('订单名字',to_timestamp('30-05-2018 12:10:00.000000','dd-mm-yyyy hh24:mi:ss.ff'),'30','这个订单稳赚','0','0');
+insert into orders(orderNum,orderTime,peopleCount,orderDesc,payType,orderStatus,productId) values('香港七日游订单',to_timestamp('25-05-2020 12:10:10.000000','dd-mm-yyyy hh24:mi:ss.ff'),'30','这个订单稳赚','0','0','66F7615C5A484A07AA78EE650D8EC3C0');
+insert into orders(orderNum,orderTime,peopleCount,orderDesc,payType,orderStatus,productId) values('澳门订单',to_timestamp('01-05-2020 12:10:10.000000','dd-mm-yyyy hh24:mi:ss.ff'),'30','这个订单稳赚','0','0','A75E43C8FE594A8B97C9CE46F1013BB1');
+
+select * from orders;
+
+update orders set productId = 1 where productId = null;
+
+---------订单表
+CREATE TABLE orders(
+id VARCHAR2(32) default SYS_GUID() PRIMARY KEY,
+orderNum VARCHAR2(50) NOT NULL UNIQUE,
+orderTime timestamp,
+peopleCount INT,
+orderDesc VARCHAR2(500),
+payType INT,
+orderStatus INT,
+productId VARCHAR2(32),
+memberId VARCHAR2(32),
+FOREIGN KEY(productId) REFERENCES product(id),
+FOREIGN KEY(memberId) REFERENCES member(id)
+);
+
+
+name,nickname,phoneNum,email
+'李连杰','老李','13756394152','lianjieddd@163.com'
+insert into member(name,nickname,phoneNum,email) values('李连杰','老李','13756394152','lianjieddd@163.com');
+select * from member;
+
+-----------会员表
+CREATE TABLE member(
+id VARCHAR2(32) default SYS_GUID() PRIMARY KEY,
+name VARCHAR2(50),
+nickname VARCHAR2(50),
+phoneNum VARCHAR2(50),
+email VARCHAR2(50)
+);
+
+--用户表
+create table users(
+id varchar2(32) default SYS_GUID() PRIMARY KEY,
+email varchar2(50) UNIQUE NOT NULL,
+username varchar2(50),
+password varchar2(50),
+phoneNum varchar2(20),
+status int
+);
+INSERT INTO users(email,username,password,phoneNum,status)
+values('laoli@163.com','老李','123','13763201458',1);
+#{email,jdbcType=varchar2},#{username,jdbcType=varchar2},#{password,jdbcType=varchar2},#{phoneNum,jdbcType=varchar2},#{status,jdbcType=int}
+
+--角色表
+create table role(
+id varchar2(32) default SYS_GUID() PRIMARY KEY,
+roleName varchar2(50),
+roleDesc varchar2(50)
+);
+INSERT INTO role(roleName,roleDesc) values("打工仔","打工仔只能看到自己的相关信息哦");
+
+--用户角色关联表
+create table users_role(
+userId varchar2(32),
+roleId varchar2(32),
+PRIMARY KEY (userId,roleId),
+FOREIGN KEY (userId) REFERENCES users(id), 
+FOREIGN KEY （roleId）REFERENCES role(id)
+);
+select="com.page.ssm.dao.RoleDao.findRoleByUserId"
+
+--资源权限表
+create table permission(
+id varchar2(32) default SYS_GUID() PRIMARY KEY,
+permissionName varchar2(50),
+url varchar2(50)
+);
+
+--角色权限关系表
+create table role_permission(
+permissionId varchar2(32),
+roleId varchar(32),
+primary key (permissionId,roleId),
+foreign key (permissionId) references permission(id),
+foreign key (roleId) references role(id)
+);
